@@ -7,9 +7,9 @@ const collectEmployees = function () {
 
   // TODO: Get user input to create and return an array of employee objects
 
-  let employeeDataFirstName = prompt('please enter first name');
-  let employeeDataLastName = prompt('please enter last name');
-  let employeeDataSalary = prompt('please enter Salary');
+  let employeeDataFirstName = prompt("please enter the employee's first name", "first name");
+  let employeeDataLastName = prompt("please enter the employee's last name", "last name");
+  let employeeDataSalary = prompt("please enter the employee's salary", "salary");
 
   const newRow = document.createElement("tr");
   document.getElementById("employee-table").appendChild(newRow);
@@ -36,9 +36,9 @@ const addAnother = confirm('add another?')
 
 if (addAnother == true) {
 
-  let employeeDataFirstName = prompt('please enter first name');
-  let employeeDataLastName = prompt('please enter last name');
-  let employeeDataSalary = prompt('please enter last name');
+  let employeeDataFirstName = prompt("please enter the employee's first name", "first name");
+  let employeeDataLastName = prompt("please enter the employee's last name", "last name");
+  let employeeDataSalary = prompt("please enter the employee's salary", "salary");
 
   const newRow = document.createElement("tr");
   document.getElementById("employee-table").appendChild(newRow);
