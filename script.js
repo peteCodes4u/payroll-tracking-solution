@@ -1,11 +1,40 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
-// empty array needed
 
 // Collect employee data
 const collectEmployees = function () {
+
   // TODO: Get user input to create and return an array of employee objects
+
+  let employeeDataFirstName = prompt('please enter first name');
+  let employeeDataLastName = prompt('please enter last name');
+  let employeeDataSalary = prompt('please enter Salary');
+
+  const newRow = document.createElement("tr");
+  document.getElementById("employee-table").appendChild(newRow);
+
+  const firstNameCell = document.createElement("td");
+  newRow.appendChild(firstNameCell);
+  firstNameCell.textContent = employeeDataFirstName;
+
+  const lastNameCell = document.createElement("td");
+  newRow.appendChild(lastNameCell);
+  lastNameCell.textContent = employeeDataLastName;
+
+  const salaryCell = document.createElement("td");
+  newRow.appendChild(salaryCell);
+  salaryCell.textContent = employeeDataSalary;
+
+  addAnotherEmployee() == true;
+}
+
+//create function for add another
+
+function addAnotherEmployee() {
+const addAnother = confirm('add another?')
+
+if (addAnother == true) {
 
   let employeeDataFirstName = prompt('please enter first name');
   let employeeDataLastName = prompt('please enter last name');
@@ -26,35 +55,9 @@ const collectEmployees = function () {
   newRow.appendChild(salaryCell);
   salaryCell.textContent = employeeDataSalary;
 
-
-  const addAnother = prompt('add another?')
-
-  if (addAnother != null) {
-
-    let employeeDataFirstName = prompt('please enter first name');
-    let employeeDataLastName = prompt('please enter last name');
-    let employeeDataSalary = prompt('please enter last name');
-
-    const newRow = document.createElement("tr");
-    document.getElementById("employee-table").appendChild(newRow);
-
-    const firstNameCell = document.createElement("td");
-    newRow.appendChild(firstNameCell);
-    firstNameCell.textContent = employeeDataFirstName;
-
-    const lastNameCell = document.createElement("td");
-    newRow.appendChild(lastNameCell);
-    lastNameCell.textContent = employeeDataLastName;
-
-    const salaryCell = document.createElement("td");
-    newRow.appendChild(salaryCell);
-    salaryCell.textContent = employeeDataSalary;
-
-
-  }
-
+  addAnotherEmployee() == true;
 }
-
+}
 
 
 // Display the average salary
