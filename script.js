@@ -35,27 +35,7 @@ function addAnotherEmployee() {
 const addAnother = confirm('add another?')
 
 if (addAnother == true) {
-
-  let employeeDataFirstName = prompt("please enter the employee's first name", "first name");
-  let employeeDataLastName = prompt("please enter the employee's last name", "last name");
-  let employeeDataSalary = prompt("please enter the employee's salary", "salary");
-
-  const newRow = document.createElement("tr");
-  document.getElementById("employee-table").appendChild(newRow);
-
-  const firstNameCell = document.createElement("td");
-  newRow.appendChild(firstNameCell);
-  firstNameCell.textContent = employeeDataFirstName;
-
-  const lastNameCell = document.createElement("td");
-  newRow.appendChild(lastNameCell);
-  lastNameCell.textContent = employeeDataLastName;
-
-  const salaryCell = document.createElement("td");
-  newRow.appendChild(salaryCell);
-  salaryCell.textContent = employeeDataSalary;
-
-  addAnotherEmployee() == true;
+collectEmployees();
 }
 }
 
