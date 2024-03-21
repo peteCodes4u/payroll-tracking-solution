@@ -22,12 +22,12 @@ const collectEmployees = function () {
   newRow.appendChild(lastNameCell);
   lastNameCell.textContent = employeeDataLastName;
 
-  // format salary
-  let USDollar = new Intl.NumberFormat ('en-US', {style: 'currency', currency: 'USD',});
+  // format salary https://www.freecodecamp.org/news/how-to-format-number-as-currency-in-javascript-one-line-of-code/
+  let USD = new Intl.NumberFormat ('en-US', {style: 'currency', currency: 'USD',});
 
   const salaryCell = document.createElement("td");
   newRow.appendChild(salaryCell);
-  salaryCell.textContent = `${USDollar.format(employeeDataSalary)}`;
+  salaryCell.textContent = `${USD.format(employeeDataSalary)}`;
 
   addAnotherEmployee() == true;
 }
