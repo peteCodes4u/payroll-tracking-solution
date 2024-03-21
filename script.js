@@ -22,9 +22,12 @@ const collectEmployees = function () {
   newRow.appendChild(lastNameCell);
   lastNameCell.textContent = employeeDataLastName;
 
+  // format salary
+  let USDollar = new Intl.NumberFormat ('en-US', {style: 'currency', currency: 'USD',});
+
   const salaryCell = document.createElement("td");
   newRow.appendChild(salaryCell);
-  salaryCell.textContent = employeeDataSalary;
+  salaryCell.textContent = `${USDollar.format(employeeDataSalary)}`;
 
   addAnotherEmployee() == true;
 }
