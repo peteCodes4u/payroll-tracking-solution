@@ -37,16 +37,19 @@ const collectEmployees = function () {
 function addAnotherEmployee() {
 const addAnother = confirm('add another?')
 
-if (addAnother == true) {
-collectEmployees();
-}
+if (addAnother == true) {collectEmployees();}
 }
 
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
-  // TODO: Calculate and display the average salary
+    // TODO: Calculate and display the average salary
+
+
+
+
 }
+
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
