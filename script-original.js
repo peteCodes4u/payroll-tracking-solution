@@ -32,13 +32,22 @@ return employees;
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
 
+  let sum = 0;
+  for(i=0; i<employeesArray.length; i++) {
+    sum = sum + employeesArray[i].salary;
+  }
 
+  let salaryAvg = sum/employeesArray.length
+  
+  console.log("The average employee salary between our" + " " + employeesArray.length + " " + "emloyee(s) is " + salaryAvg)
 
 }
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
   
+  
+
 }
 
 /*
