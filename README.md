@@ -16,7 +16,7 @@ This project has been developed to solve for collecting and organizing employee 
 
 The intended usage of this application is to organize employee data by collecting emplyee names and salary information. 
 
-![](./assets/images/UPDATE-HERE.png)
+![](./assets/images/03ScreenShot.png)
 
 ## Features
 
