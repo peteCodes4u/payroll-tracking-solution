@@ -29,7 +29,7 @@ const collectEmployees = function () {
   newRow.appendChild(salaryCell);
   salaryCell.textContent = `${USD.format(employeeDataSalary)}`;
 
-  addAnotherEmployee() == true;
+  addAnotherEmployee();
 }
 
 //create function for add another
